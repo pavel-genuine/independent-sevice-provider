@@ -1,0 +1,9 @@
+.banner{
+    display: flex;
+    padding: 50px 200px;
+}
+
+img{
+    width: 150%;
+    border: 2px solid black;
+}
