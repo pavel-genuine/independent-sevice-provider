@@ -15,7 +15,6 @@ const SignIn = () => {
     const [
       signInWithEmailAndPassword,
       user,
-      loading,
       error,
     ] = useSignInWithEmailAndPassword(auth);
   
@@ -24,8 +23,7 @@ const SignIn = () => {
     let location = useLocation();
     let from = location.state?.from?.pathname || "/";
     if(user){
-        navigate(from, { replace: true }
-          );
+        navigate(from, { replace: true });
     }
   
 

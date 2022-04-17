@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -12,7 +13,11 @@ const RequireAuth = ({children}) => {
 
 
     if(loading){
-        return <h1>loaing...</h1>
+        return <div style={{marginTop:'100px'}}>
+            <Spinner animation="grow" />
+            <Spinner style={{margin:'0 20px 0 20px '}} animation="grow" />
+            <Spinner animation="grow" />
+        </div>
     }
     if(!user){
           
@@ -20,9 +25,6 @@ const RequireAuth = ({children}) => {
 
     } 
 
-    if(loading){
-        return <p>loaing...</p>
-    }
 
     return children
 };
