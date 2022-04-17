@@ -1,0 +1,33 @@
+
+
+[
+    {
+        "id": 1,
+        "name": "Books",
+        "img": "https://jamesclear.com/wp-content/uploads/2022/03/atomic-habits-full.png",
+        "details": "You can think of my weekly articles as the place where I share incremental lessons on how to build habits that stick and live better. I share the lessons I learn week-by-week in my stories and articles. Meanwhile, my books are where I share more comprehensive analysis on these topics. My two bestseller books : 'Atomic Habits' & 'The Clear Habit Journal' "
+        
+    },
+    {
+        "id": 2,
+        "name": "Articles",
+        "img": "https://homeschoolingart.com/wp-content/uploads/2017/10/BrainDoodle-1000x640.jpg",
+        "details": "You’ll find interesting articles to read on topics like how to stop procrastinating as well as personal recommendations like my list of the best books to read and my minimalist travel guide. Ready to dive in? You can use the categories below to browse my best articles."
+       
+    },
+    {
+        "id": 3,
+        "name": "Newsletter",
+        "img": "https://www.kindpng.com/picc/m/412-4120253_graph-up-graph-symbol-png-transparent-png.png",
+        "details": "'The most wisdom per word of any newsletter on the web'.The 3-2-1 Newsletter is one of the most popular newsletters in the world. Every Thursday, the latest issue is sent to over 1,000,000 people. Each message includes 3 short ideas from me, 2 quotes from others, and 1 question for you to ponder.Enter your email and sign up for free right now."
+        
+    },
+    {
+        "id": 4,
+        "name": "Event",
+        "img": "https://www.iamjoelbrown.com/wp-content/uploads/2019/07/James-Clear-Habits.jpg",
+        "details": "I am occasionally asked to speak at companies, conferences, or private events.Previous clients include American Express, AT&T, Capital One, Cisco, ESPN, Facebook, General Dynamics, General Electric, Google, Honda, IKEA, Intel, LinkedIn, Lululemon, McKinsey & Company, Merrill Lynch, Microsoft, Procter & Gamble, Stanford Medical Center, and many more. "
+        
+    }
+  
+]
