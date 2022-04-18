@@ -28,11 +28,11 @@ const SignUp = () => {
 
 
   const handleEmail = (e) => {
-    console.log(e.target.value);
+    
     setEmail(e.target.value)
   }
   const handlePassword = (e) => {
-    console.log(e.target.value);
+    
     setPassword(e.target.value)
   }
 
@@ -40,7 +40,7 @@ const SignUp = () => {
 
     e.preventDefault()
     createUserWithEmailAndPassword(email, password)
-    console.log(user);
+    
 
   }
 
@@ -69,8 +69,8 @@ const SignUp = () => {
           <Form.Control style={{ backgroundColor: '#f6f3f3', border: 0, padding: '12px', fontSize: '18px' }} type="password" placeholder="Confirm  Password" />
         </Form.Group>
         <input className="bg-dark border-0 text-white w-100 rounded text-center fs-5 " style={{ height: '50px' }} type="submit" value="Sign Up" />
-        <p className='text-danger mt-3' >Already Have an A/C ?  <Link className='text-decoration-none ' to='/signin'>Sign In</Link></p>
-
+        <p className='text-danger mt-3' >Already Have an account ?  <Link className='text-decoration-none ' to='/signin'>Sign In</Link></p>
+        <p>{error ? error.message : ''}</p>
       </Form>
 
 

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import toast, { Toaster } from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const SignIn = () => {
 
-  // const [email, setEmail] = useState('')
-  // const [password, setPassword] = useState('')
+ 
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -35,11 +35,11 @@ const SignIn = () => {
 
 
   const handleEmail = (e) => {
-    console.log(e.target.value);
+  
     setEmail(e.target.value)
   }
   const handlePassword = (e) => {
-    console.log(e.target.value);
+    
     setPassword(e.target.value)
   }
 
@@ -47,15 +47,16 @@ const SignIn = () => {
 
     e.preventDefault()
     signInWithEmailAndPassword(email, password)
-    console.log(user);
+    
 
 
   }
 
-  console.log(user);
+ 
 
   return (
     <div className=' d-flex flex-column my-5  align-items-center justify-content-center'>
+      <div><Toaster/></div>
       <Form onSubmit={handleSignInUser} className='w-25' >
 
         <Form.Group className="mb-3" controlId="formBasicEmail1">
@@ -68,15 +69,16 @@ const SignIn = () => {
         </Form.Group>
 
         <input className="bg-dark border-0 text-white w-100 rounded text-center fs-5 " style={{ height: '50px' }} type="submit" value="Sign In" />
-        <p className='text-danger mt-3' >Don't Have an A/C ?  <Link className='text-decoration-none ' to='/signup'>Sign up</Link></p>
-        {error ? error.message : ''}
+        <p className='text-danger mt-3' >Don't Have an account ?  <Link className='text-decoration-none ' to='/signup'>Sign up</Link></p>
+        <p>{error ? error.message : ''}</p>
 
         <div>
         <span className='text-danger' >Forgot Password ?</span>
         <button className='border-0 ms-2 bg-white text-primary'
           onClick={async () => {
             await sendPasswordResetEmail(email);
-            alert('Sent email');
+            // alert('Sent email');s
+            toast.success('Email sent successfully!')
           }}>Reset Password</button>
       </div>
       </Form>
