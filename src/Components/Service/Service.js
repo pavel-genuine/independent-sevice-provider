@@ -1,6 +1,7 @@
 import { Button } from 'bootstrap';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Service.css'
 
 const Service = ({service}) => {
 
@@ -8,8 +9,8 @@ const Service = ({service}) => {
 
     return (
         <div className='col-6' >
-          <div className='border w-50 m-4 p-3 shadow'>
-          <img style={{width:'100%',marginBottom:'15px'}} src={img} alt="" />
+          <div className='border service  shadow'>
+          <img  src={img} alt="" />
             <h5>{name}</h5>
             <h5>Price : {price}</h5>
 

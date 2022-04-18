@@ -14,7 +14,7 @@ const Services = () => {
     return (
         <div>
             <h3 className='text-center'>Services: </h3>
-            <div className='row w-100' style={{paddingLeft:'300px'}} >
+            <div className='services' >
                 {
                     console.log(services)
                 }

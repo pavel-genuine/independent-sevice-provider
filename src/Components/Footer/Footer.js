@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='bg-black text-white p-5 w-100 mt-5 row'>
-            <div className='col-7 mx-5' >
+            <div className='col-7 mx-5 ' >
                 <h5>
                     James Clear
                 </h5>
@@ -13,7 +13,9 @@ const Footer = () => {
                         We have helped over 30,000 people so far.
                     </small>
                 </p>
+            
             </div>
+
 
             <div className='col-4 row' >
                 <div className='col-4 border-end border-secondary'>

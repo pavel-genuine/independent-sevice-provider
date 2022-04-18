@@ -4,9 +4,9 @@ import  './Banner.css'
 
 const Banner = () => {
     return (
-        <div className='banner bg-black mb-5' style={{height:'80vh'}} >
-          <div><img style={{borderRadius:'50%', width:'120%'}}  src={img} alt="" /></div>
-          <div style={{width:'50%', margin:'70px 0 0 200px '}} >
+        <div className='banner bg-black mb-5' >
+          <div><img   src={img} alt="" /></div>
+          <div className='fact' >
           <h1 className='text-white'>The writer, speaker, trainer...</h1>
           <h6 className='text-white'>I’ve been writing at JamesClear.com about habits, decision making, and continuous improvement since 2012.
            I’m the author of the #1 New York Times bestseller, Atomic Habits, which has sold more than 7 million copies worldwide and has been translated into more than 50 languages. 

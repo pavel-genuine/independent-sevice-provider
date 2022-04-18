@@ -1,9 +1,44 @@
-.banner{
-    display: flex;
-    padding: 50px 200px;
-}
+
 
 img{
-    width: 150%;
-    border: 2px solid black;
+    border-radius:50%;
+    width: 60%;
+    margin: 100px 0 0 150px;
+   
+}
+
+.fact{
+    width:50%; 
+    margin:150px 0 0 100px;
+}
+
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:0;
+    
+}
+
+@media only screen and (max-width: 688px) {
+
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding:30px 40px;
+
+    }
+
+    img{
+        width: 85%;
+        margin: 10px 0 0 20px;
+
+    }
+
+    .fact{
+        width:100%; 
+        margin:20px 0 0 10px;
+    }
+
 }
