@@ -2,9 +2,9 @@
 import { Button } from 'bootstrap';
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 
 const SignUp = () => {
 
@@ -17,7 +17,14 @@ const SignUp = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification :true});
+
+    
+
+      const navigate=useNavigate()
+
+
+
 
     const handleEmail=(e)=>{
         console.log(e.target.value);
@@ -28,16 +35,18 @@ const SignUp = () => {
         setPassword(e.target.value)
     }
 
-    const handleCreateUser=(e)=>{
+    const handleCreateUser = (e)=>{
 
         e.preventDefault()
         createUserWithEmailAndPassword(email,password)
-console.log(user);
-
-     
+        console.log(user);
+        
     }
     
-    console.log(user);
+   if(user){
+     navigate('/')
+
+   }
     
     return (
         <div className=' d-flex  align-items-center justify-content-center'>    

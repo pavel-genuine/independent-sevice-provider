@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
@@ -17,6 +17,10 @@ const SignIn = () => {
       user,
       error,
     ] = useSignInWithEmailAndPassword(auth);
+
+    const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
+      auth
+    );
   
 
     let navigate = useNavigate();
@@ -65,6 +69,9 @@ const SignIn = () => {
      <p className='text-danger mt-3' >Don't Have an A/C ?  <Link className='text-decoration-none ' to='/signup'>Sign up</Link></p>
       {error ? error.message :''}
     </Form>
+
+    
+
     </div>
             
     

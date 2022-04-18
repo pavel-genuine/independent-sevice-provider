@@ -30,16 +30,16 @@ const Checkout = () => {
       </Form.Group>
      
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control required  style={{backgroundColor:'#f6f3f3', border:0, padding:'12px', fontSize:'18px'}} type="email" name='email'  placeholder='Address 1 :' />
+        <Form.Control required  style={{backgroundColor:'#f6f3f3', border:0, padding:'12px', fontSize:'18px'}} type="text" name='address'  placeholder='Address 1 :' />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control   style={{backgroundColor:'#f6f3f3', border:0, padding:'12px', fontSize:'18px'}} type="email" name='email'  placeholder='Address 2 (Optional) :' />
+        <Form.Control   style={{backgroundColor:'#f6f3f3', border:0, padding:'12px', fontSize:'18px'}} type="text" name='address'  placeholder='Address 2 (Optional) :' />
       </Form.Group>
-
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Control   style={{backgroundColor:'#f6f3f3', border:0, padding:'12px', fontSize:'18px'}} type="text" name='service'  placeholder='Service Details :' />
+      </Form.Group>
       
-    
-
-      <input  className="bg-dark border-0 text-white w-100 rounded text-center fs-5 " style={{height:'50px'}} type="submit" value="Submit"  />
+      <input  className="bg-dark border-0 text-white w-100 rounded text-center fs-5 " style={{height:'50px'}} type="submit" value="Proceed"  />
       
     </Form>
     </div>

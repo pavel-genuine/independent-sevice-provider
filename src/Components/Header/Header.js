@@ -4,38 +4,46 @@ import { Form } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import CustomLink from '../CustomLink/CustomLink';
+import './Header.css'
 
 const Header = () => {
 
     const [user]=useAuthState(auth)
 
     return (
-        <div style={{margin:'50px 200px '}} className='d-flex justify-content-between'>
+        <div className='row mb-1 p-4 shadow' >
            
-           <Link style={{textDecoration:'none', color:'black'}}  to='/'> <h5>James Clear</h5></Link>
+           <div className='col-4 ms-4'>
+           <CustomLink   to='/'> <h4>James Clear</h4></CustomLink>
+           </div>
 
-           <div >
+           <div className='header-link col-3' >
            
-           <Link style={{margin:'0 20px 0 20px'}} to='/'>Home</Link>
+           <CustomLink  to='/'>Home</CustomLink>
+           
+           <CustomLink  to='/checkout'>Checkout</CustomLink>
+           <CustomLink  to='/blogs'>Blogs</CustomLink>
+           <CustomLink   to='/about'>About</CustomLink>
 
-           <Link style={{margin:'0 20px 0 20px'}} to='/checkout'>Checkout</Link>
-           <Link style={{margin:'0 20px 0 20px'}} to='/blogs'>Blogs</Link>
-           <Link style={{margin:'0 20px 0 20px'}} to='/about'>About</Link>
+           </div>
 
-            {
-                user?'':<Link style={{margin:'0 20px 0 20px'}} to='/signup'>Sign Up</Link>
-            }
-            {
-                user? <button style={{border:'0', backgroundColor:'white'}}  onClick={()=>signOut(auth)} >Sign Out</button>:  <Link to='/signin'>Sign In</Link> 
-            }
-
+           <div className='col-3 d-flex justify-content-evenly'>
            {
-               user? <span style={{backgroundColor:'black', color:'white', borderRadius:'30px',padding:'10px', marginLeft:'20px'}}>
+                user?'':<CustomLink  to='/signup'>Sign Up</CustomLink>
+            }
+            
+             {
+               user? <span style={{backgroundColor:'black', color:'white', borderRadius:'30px',padding:'10px', marginLeft:'10px'}}>
                {user?.email}
                </span> :''
            }
-
+           {
+                user? <button style={{border:'0', backgroundColor:'white'}}  onClick={()=>signOut(auth)} >Sign Out</button>:  <CustomLink to='/signin'>Sign In</CustomLink> 
+            }
            </div>
+
+          
             
         </div>
     );
