@@ -3,5 +3,20 @@
   justify-content: space-around;
   align-items: center;
   margin: 0px 100px;
-  
+  }
+
+  .mobile-nav{
+    display: none;
+  }
+
+  @media only screen and (max-width: 688px) {
+
+    .desktop-nav{
+      display: none;
+    }
+
+    .mobile-nav{
+      display:block;
+    }
+
   }
