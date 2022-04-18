@@ -20,7 +20,7 @@ const Header = () => {
                 <div className="container-fluid row">
                     <div className='col-md-6 ms-5'>
                         <Link className="navbar-brand fw-bold " to='/'>James Clear</Link>
-                        <button className="navbar-toggler bg-secondary " style={{marginLeft:'90px'}} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button className="navbar-toggler " style={{marginLeft:'90px'}} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon "></span>
                         </button>
                     </div>
@@ -63,21 +63,21 @@ const Header = () => {
 
                         </ul>
                         <form >
-                            <p className="nav-item">
+                            <div className="nav-item">
 
 
                                 {
                                     user ? '' : <CustomLink to='/signup'>Sign Up</CustomLink>
                                 }
 
-                            </p>
-                            <p className="nav-item ">
+                            </div>
+                            <div className="nav-item ">
 
                                 {
                                     user ? '' : <CustomLink to='/signin'>Sign In</CustomLink>
                                 }
 
-                            </p>      </form>
+                            </div>      </form>
                     </div>
                 </div>
             </nav>

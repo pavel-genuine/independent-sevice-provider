@@ -10,8 +10,8 @@ const Subscription = () => {
                 my #1 New York Times bestselling book. And enroll in the free email course.
                
                 </h5>
-                <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                <div className="input-group mb-3">
+                    <input type="email" className="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                     <span className="input-group-text bg-dark text-white" id="basic-addon2">Download The First Lesson</span>
                 </div>
            <h5>
