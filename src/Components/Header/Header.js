@@ -34,16 +34,16 @@ const Header = () => {
 
 
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <CustomLink to='/checkout'>Checkout</CustomLink>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <CustomLink to='/blogs'>Blogs</CustomLink>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <CustomLink to='/about'>About</CustomLink>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li className="nav-item dropdown">
 
                                 {
                                     user ? <span className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ backgroundColor: 'black', color: 'white', borderRadius: '30px', padding: '10px', marginLeft: '10px' }}>
@@ -51,7 +51,7 @@ const Header = () => {
                                     </span> : ''
                                 }
 
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 
 
                                     <button style={{ border: '0', backgroundColor: 'black', color: 'white', width: '100%' }} onClick={() => signOut(auth)} >Sign Out</button>
@@ -63,7 +63,7 @@ const Header = () => {
 
                         </ul>
                         <form >
-                            <p class="nav-item">
+                            <p className="nav-item">
 
 
                                 {
@@ -71,7 +71,7 @@ const Header = () => {
                                 }
 
                             </p>
-                            <p class="nav-item ">
+                            <p className="nav-item ">
 
                                 {
                                     user ? '' : <CustomLink to='/signin'>Sign In</CustomLink>
