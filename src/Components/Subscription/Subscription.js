@@ -3,8 +3,8 @@ import React from 'react';
 const Subscription = () => {
     return (
 
-        <div className='shadow  mx-auto' style={{padding:'3%',width:'95%'}}>
-            <h3 className='text-center mb-5'>Subscribe :</h3>
+        <div className='shadow mx-auto' style={{padding:'3%',width:'95%'}}>
+            <h3 className='text-center text-decoration-underline mb-5'>Subscribe :</h3>
             <h5>
                 Download Chapter 1 of Atomic Habits,
                 my #1 New York Times bestselling book. And enroll in the free email course.
