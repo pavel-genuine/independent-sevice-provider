@@ -4,6 +4,7 @@
     {
         "id": 1,
         "name": "Books",
+        "price": "$ 22.00",
         "img": "https://i.pinimg.com/originals/8b/1f/11/8b1f114b05bb67c25b4294838c581306.jpg",
         "details": "You can think of my weekly articles as the place where I share incremental lessons on how to build habits that stick and live better. I share the lessons I learn week-by-week in my stories and articles. Meanwhile, my books are where I share more comprehensive analysis on these topics. My two bestsellers : 'Atomic Habits' & 'The Clear Habit Journal' "
         
@@ -11,6 +12,7 @@
     {
         "id": 2,
         "name": "Articles",
+        "price": "$00.00 (free)",
         "img": "https://img.freepik.com/free-photo/old-new-habits-concept_23-2148537773.jpg?w=1060&t=st=1650238593~exp=1650239193~hmac=9dcd9ad468caf7ea60e4519981e421d1d7be86983776acb3bf24ebd27587655f",
         "details": "You’ll find interesting articles to read on topics like how to stop procrastinating as well as personal recommendations like my list of the best books to read and my minimalist travel guide. Ready to dive in? You can use the categories below to browse my best articles."
        
@@ -18,6 +20,7 @@
     {
         "id": 3,
         "name": "Newsletter",
+        "price": "$00.00 (free)",
         "img": "https://img.freepik.com/free-photo/computer-laptop-mockup-digital-document-transfer-email-marketing-concept-cartoon-minimal-service-file-information-banner-pink-background-3d-render-illustration_598821-929.jpg?w=1060",
         "details": "'The most wisdom per word of any newsletter on the web'.The 3-2-1 Newsletter is one of the most popular newsletters in the world. Every Thursday, the latest issue is sent to over 1,000,000 people. Each message includes 3 short ideas from me, 2 quotes from others, and 1 question for you to ponder.Enter your email and sign up for free right now."
         
@@ -25,6 +28,7 @@
     {
         "id": 4,
         "name": "Event",
+        "price": "(On Discussion)",
         "img": "https://373819-1169963-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2021/02/james-clear-hh2.jpg",
         "details": "I am occasionally asked to speak at companies, conferences, or private events.Previous clients include American Express, AT&T, Capital One, Cisco, ESPN, Facebook, General Dynamics, General Electric, Google, Honda, IKEA, Intel, LinkedIn, Lululemon, McKinsey & Company, Merrill Lynch, Microsoft, Procter & Gamble, Stanford Medical Center, and many more. "
         

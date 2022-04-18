@@ -12,10 +12,10 @@ const Header = () => {
     const [user]=useAuthState(auth)
 
     return (
-        <div className='row mb-1 p-4 shadow' >
+        <div className='row  p-3 w-100 shadow' >
            
-           <div className='col-4 ms-4'>
-           <CustomLink   to='/'> <h4>James Clear</h4></CustomLink>
+           <div className='col-4 ms-4 d-flex align-items-center'>
+           <CustomLink   to='/'> <h4 className='ms-5'>James Clear</h4></CustomLink>
            </div>
 
            <div className='header-link col-3' >

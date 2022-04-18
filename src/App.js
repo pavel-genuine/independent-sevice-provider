@@ -11,6 +11,8 @@ import Header from './Components/Header/Header';
 import Checkout from './Components/Checkout/Checkout';
 import Blogs from './Components/Blogs/Blogs';
 import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
+import NotFound from './Components/Not-Found/NotFound';
 
  
 function App() {
@@ -30,8 +32,10 @@ function App() {
         <Route path='/about'  element={<About></About>}></Route>
         <Route path='/signin'  element={<SignIn></SignIn>}></Route>
         <Route path='/signup'  element={<SignUp></SignUp>}></Route>
+        <Route path='/*'  element={<NotFound></NotFound>}></Route>
     
       </Routes>
+      <Footer></Footer>
      
     </div>
   );
