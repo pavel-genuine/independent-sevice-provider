@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
+import './Services.css'
 
 const Services = () => {
 
@@ -15,9 +16,7 @@ const Services = () => {
         <div>
             <h3 className='text-center'>Services: </h3>
             <div className='services' >
-                {
-                    console.log(services)
-                }
+               
                 {
                     services.map(service=><Service key={service.id} service={service} ></Service>)
                 }

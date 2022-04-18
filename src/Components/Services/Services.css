@@ -2,7 +2,7 @@
 .services{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    margin:0 100px;
+    padding:3% 5% 5% 15%;
     width: 100%;
     
 }
@@ -12,6 +12,7 @@
     .services{
         display: grid;
         grid-template-columns: 1fr;
+        padding:3% 8%;
       
     }
 

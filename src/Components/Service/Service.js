@@ -8,8 +8,8 @@ const Service = ({service}) => {
     const { name,price, img, details} =service
 
     return (
-        <div className='col-6' >
-          <div className='border service  shadow'>
+        <div  >
+          <div className=' service shadow'>
           <img  src={img} alt="" />
             <h5>{name}</h5>
             <h5>Price : {price}</h5>
