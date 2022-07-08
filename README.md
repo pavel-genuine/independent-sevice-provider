@@ -1,5 +1,5 @@
 # Project Name & Live Site Link:
-# Project name : I named the project as "James Clear" a New York Times bestseller book Writer and self-help trainer.
+## Project name : I named the project as "James Clear" a New York Times bestseller book Writer and self-help trainer.
 
 ## Live site link : (https://fir-red-onion.web.app/)
 
